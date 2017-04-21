@@ -1,0 +1,5 @@
+#AuthType Basic
+#AuthName "Restricted Area"
+#AuthUserFile /media/sf_truereligionbrandjeans/2013/FitGuide/www/trunk/.htpasswd
+#Require valid-user
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="UTF-8">
+<title>Bacbone.js testing</title>
+
+<!-- Core Need Fiels  -->
+<script src="../js/jquery.min.1.8.0.js"></script>
+<script src="../js/TweenMax.min.js"></script>
+<script src="../js/mustache.js"></script>
+<script src="../js/underscore.js"></script>
+<script src="../js/json2.js"></script><!-- json2.js for older browsers  -->
+<script src="../js/backbone.js"></script>
+<script src="../js/application.js"></script>
+
+<!-- Models  -->
+<script src="../js/models/Page.js"></script>
+<script src="../js/models/ErrorPage.js"></script>
+<!-- Views  -->
+<script src="../js/views/Base.js"></script>
+<script src="../js/views/Gender.js"></script>
+<script src="../js/views/Fit.js"></script>
+<script src="../js/views/Style.js"></script>
+<script src="../js/views/Compare.js"></script>
+<script src="../js/views/Navigation.js"></script>
+<script src="../js/views/Loader.js"></script>
+<!-- Routers  -->
+<script src="../js/routers/Base.js"></script>
+<!-- Collections  -->
+<script src="../js/collections/Pages.js"></script>
+
+<script type="text/javascript" src="http://fast.fonts.com/jsapi/f954b466-bb90-44c9-86b7-e8811622291c.js"></script>
+
+<!-- Templates  -->
+<script id="tpl-primary-nav" type="text/html">
+<li><a href="/">Home</a></li>
+<li>/</li>
+<li><a href="/fit-guide/">Fit Guide</a></li>
+{{#crumbs}}
+<li>/</li>
+<li><a id="{{ htmlID }}" href="#{{ slug }}">{{ name }}</a></li>
+{{/crumbs}}
+</script>
+
+<script id="tpl-gender-item" type="text/html">
+	<a href="#{{ name }}/" class="gender-item silhouette-item">
+	<h3 class="title-overlay">{{ name }}</h3>
+	{{#images}}
+	<img class="{{ image_type }}" src="/images/{{ url }}" />
+	{{/images}}
+	</a>
+</script>
+
+<script id="tpl-fit-item" type="text/html">
+<a href="#{{ slug }}" class="fit-item silhouette-item">
+		{{#images}}
+		<img class="{{ image_type }}" src="/images/{{ url }}" height="395" />
+		{{/images}}
+	<h3>{{ name }}</h3>
+	<p>{{ short_description }}</p>
+</a>
+</script>
+
+<script id="tpl-style-item" type="text/html">
+<a href="#{{ slug }}" class="style-item silhouette-item">
+		{{#images}}
+		<img class="{{ image_type }}" src="/images/{{ url }}" height="395" />
+		{{/images}}
+	<h3>{{ name }}</h3>
+	<p>{{ short_description }}</p>
+</a>
+</script>
+
+<script id="tpl-style-detail" type="text/html">
+
+<div id="style-detail-column">
+	<h2>{{ name }}</h2>
+	<h3>{{ fit }}</h3>
+	<h4>{{ rise }} / {{ pocket }}</h4>
+	<ul class="social-cta">
+		<li class="cta-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}" target="_blank"><span>Share on Facebook</span></a></li>
+		<li class="cta-twitter">
+			<a href="https://twitter.com/intent/tweet?url={{ full_url }}&text={{ title }}&hashtags=truereligionjeans" target="_blank"><span>Tweet</span></a>
+		</li>
+		<li class="cta-pinterest">
+			<a href="http://pinterest.com/pin/create/div/?url={{ full_url }}&media={{ first_view }}&description={{ short_description }}" target="_blank"><span>Pin It</span></a>
+		</li>
+	</ul>
+	<div class="description">{{ short_description }}</div>
+	<a class="btn-shop" href="{{ shop_url }}">Shop {{ name }}</a><br/>
+	<div  class="btn-video" ><span>Watch Video</span></div>
+	<ul class="compare-links">
+		<li><a href="#{{ compare_url }}">Compare {{ name }}</a></li>
+		<li><a href="javascript:popup_sizechart2('/store/sizechart.aspx?chart={{ gender}}','340','1030');">Size Chart</a></li>
+	</ul>
+</div>
+
+<div id="style-view-column">
+	<div class="view-container">
+	{{#views}}
+		<div class="view-item {{image_type}}">
+		{{#spot}}
+			<div class="view-spot" style="top:{{coordinates.y}}px;left:{{coordinates.x}}px;">
+				<div class="open">+</div>
+				<div class="close">&minus;</div>
+				<div class="spot-notes">{{notes}}</div>
+			</div>
+		{{/spot}}
+
+			<img class="view-image" src="/images/{{url}}" />
+		</div>
+	{{/views}}
+	</div>
+
+	<aside id="style-controls">
+		<nav id="style-nav">
+			<h3 class="title-style-nav">Select Another Style</h3>
+		</nav>
+		<nav id="view-nav">
+			<div data-dir="prev" id="btn-view-prev" ><span>prev view</span></div>
+			<div data-dir="next" id="btn-view-next" ><span>next view</span></div>
+			<br/>
+			<span>Rotate Image</span>
+		</nav>
+	</aside>
+
+	<ul id="style-measurements">
+		<li><span>Inseam</span> {{ inseam }}</li>
+		<li> / </li>
+		<li><span>Front Rise</span> {{ front_rise }}</li>
+		<li> / </li>
+		<li><span>Knee</span> {{ knee }}</li>
+		<li> / </li>
+		<li><span>Leg Opening</span> {{ leg_open }}</li>
+	</ul>
+</div>
+
+</script>
+
+<script id="tpl-style-nav" type="text/html">
+
+<a id="{{ htmlID }}" href="#{{ slug }}">{{ name }}</a>
+
+</script>
+
+
+<script id="tpl-compare-item" type="text/html">
+<div class="compare-item" id="compare-{{ htmlID }}">
+	<div class="compare-detail-column">
+		<h2>{{ name }}</h2>
+		<h3>{{ fit }}</h3>
+		<h4>{{ rise }}</h4>
+
+		<hr class="divider" />
+		
+		<div class="description">{{ short_description }}</div>
+		<a class="btn-shop" href="{{ shop_url }}">Shop {{ name }}</a><br/>
+		
+		<a class="view-link" href="#{{ slug }}">View {{ name }}</a><br/>
+
+		<a class="select-new-link" href="#{{ new_compare }}"><span>Select<br/> Another<br/> Style</span></a>
+	</div>
+
+		<div class="view-container">
+		{{#views}}
+			<div class="view-item {{image_type}}">
+			{{#spot}}
+				<div class="view-spot" style="top:{{coordinates.y}}px;left:{{coordinates.x}}px;">
+					<div class="open">+</div>
+					<div class="close">&minus;</div>
+					<div class="spot-notes">{{notes}}</div>
+				</div>
+			{{/spot}}
+
+				<img class="view-image" src="/images/{{url}}" />
+			</div>
+		{{/views}}
+		</div>
+
+</div>
+</script>
+
+<script id="tpl-compare-view-nav" type="text/html">
+<nav id="view-nav">
+	<div data-dir="prev" id="btn-view-prev" ><span>prev view</span></div>
+	<div data-dir="next" id="btn-view-next" ><span>next view</span></div>
+	<br/>
+	<span>Rotate Image</span>
+</nav>
+</script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="../css/fitguide.2013.css" >
+
+</head>
+<body>
+
+
+
+<div id="fitGuide">
+	<header>
+		<nav id="fg-primary-nav">
+
+		</nav>
+	</header>
+
+</div>
+
+<footer>
+
+</footer>
+
+<script type="text/javascript">
+(function($){
+
+	App.init();
+
+})(jQuery);
+</script>
+
+</body>
+</html>

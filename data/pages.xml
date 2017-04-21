@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <title>Denim Fit Guide for {{ title }} - Find Your Perfect Fitting Jeans | True Religion</title>
+    <page>
+        <page_id>home</page_id>
+        <name>Home</name>
+        <title>Home</title>
+        <type>defualt</type>
+        <item>
+            <images>
+              <image_type>list-view</image_type>
+              <url>gender-mens.png</url>
+            </images>
+            <images>
+              <image_type>hover-view</image_type>
+              <url>gender-mens-hover.png</url>
+            </images>
+          <name>mens</name>
+        </item>
+        <item>
+            <images>
+              <image_type>list-view</image_type>
+              <url>gender-womens.png</url>
+            </images>
+            <images>
+              <image_type>hover-view</image_type>
+              <url>gender-womens-hover.png</url>
+            </images>
+          <name>womens</name>
+        </item>
+      </page>
+
+    <!-- Mens Start -->
+      <page>
+        <page_id>mens</page_id>
+        <name>Mens</name>
+        <title>Mens</title>
+        <type>gender</type>
+        <!-- Fit Pages Start -->
+      		<page>
+            <page_id>fit-a</page_id>
+              <images>
+                <image_type>list-view</image_type>
+                <url>fit-sample.png</url>
+              </images>
+              <images>
+                <image_type>hover-view</image_type>
+                <url>fit-sample-hover.png</url>
+              </images>
+            <name>Fit A</name>
+            <short_description><![CDATA[A short description.]]></short_description>
+            <title>Fit A Title</title>
+            <type>fit</type>
+            <!-- Style Pages Start -->
+              <page>
+                <page_id>style-a-1</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fits/_0000_bobby_back.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fits/_0000_bobby_back.png</url>
+                  </images>
+                  <views>
+                    <spot>
+                      <coordinates>
+                        <x>50</x>
+                        <y>400</y>
+                      </coordinates>
+                      <notes><![CDATA[A short description.]]></notes>
+                    </spot>
+                     <spot>
+                      <coordinates>
+                        <x>100</x>
+                        <y>200</y>
+                      </coordinates>
+                      <notes><![CDATA[A short description.]]></notes>
+                    </spot>
+                    <image_type>front</image_type>
+                    <url>fits/_0000_bobby_back.png</url>
+                  </views>
+                  <views>
+                    <spot>
+                      <coordinates>
+                        <x>200</x>
+                        <y>400</y>
+                      </coordinates>
+                      <notes><![CDATA[A short description.]]></notes>
+                    </spot>
+                    <image_type>side</image_type>
+                    <url>fits/_0001_bobby_quarter.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fits/_0002_bobby_front.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style A 1</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style A 1 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+              <page>
+                <hotspots>
+                  <spot>
+                    <coordinates>
+                      <x>50</x>
+                      <y>50</y>
+                    </coordinates>
+                    <notes><![CDATA[A short description.]]></notes>
+                  </spot>
+                </hotspots>
+                <page_id>style-a-2</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fit-sample.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </images>
+                  <views>
+                    <spot>
+                      <coordinates>
+                        <x>50</x>
+                        <y>400</y>
+                      </coordinates>
+                      <notes><![CDATA[A short description.]]></notes>
+                    </spot>
+                     <spot>
+                      <coordinates>
+                        <x>100</x>
+                        <y>200</y>
+                      </coordinates>
+                      <notes><![CDATA[A short description.]]></notes>
+                    </spot>
+                    <image_type>front</image_type>
+                    <url>fits/_0000_bobby_back.png</url>
+                  </views>
+                  <views>
+                    <spot>
+                      <coordinates>
+                        <x>200</x>
+                        <y>400</y>
+                      </coordinates>
+                      <notes><![CDATA[A short description.]]></notes>
+                    </spot>
+                    <image_type>side</image_type>
+                    <url>fits/_0001_bobby_quarter.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fits/_0002_bobby_front.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style A 2</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style A 2 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+              <page>
+                <hotspots>
+                  <spot>
+                    <coordinates>
+                      <x>50</x>
+                      <y>50</y>
+                    </coordinates>
+                    <notes><![CDATA[A short description.]]></notes>
+                  </spot>
+                </hotspots>
+                <page_id>style-a-3</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fit-sample.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </images>
+                  <views>
+                    <image_type>front</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>side</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style A 3</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style A 3 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+              <page>
+                <hotspots>
+                  <spot>
+                    <coordinates>
+                      <x>50</x>
+                      <y>50</y>
+                    </coordinates>
+                    <notes><![CDATA[A short description.]]></notes>
+                  </spot>
+                </hotspots>
+                <page_id>style-a-4</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fit-sample.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </images>
+                  <views>
+                    <image_type>front</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>side</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style A 4</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style A 4 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+              <page>
+                <hotspots>
+                  <spot>
+                    <coordinates>
+                      <x>50</x>
+                      <y>50</y>
+                    </coordinates>
+                    <notes><![CDATA[A short description.]]></notes>
+                  </spot>
+                </hotspots>
+                <page_id>style-a-5</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fit-sample.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </images>
+                  <views>
+                    <image_type>front</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>side</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style A 5</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style A 5 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+              <page>
+                <hotspots>
+                  <spot>
+                    <coordinates>
+                      <x>50</x>
+                      <y>50</y>
+                    </coordinates>
+                    <notes><![CDATA[A short description.]]></notes>
+                  </spot>
+                </hotspots>
+                <page_id>style-a-6</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fit-sample.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </images>
+                  <views>
+                    <image_type>front</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>side</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style A 6</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style A 6 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+    		  </page><!-- Fit Page End -->
+
+          <page>
+            <page_id>fit-b</page_id>
+              <images>
+                <image_type>list-view</image_type>
+                <url>fit-sample.png</url>
+              </images>
+              <images>
+                <image_type>hover-view</image_type>
+                <url>fit-sample-hover.png</url>
+              </images>
+            <name>Fit B</name>
+            <short_description><![CDATA[A short description.]]></short_description>
+            <title>Fit B Title</title>
+            <type>fit</type>
+            <!-- Style Page Start -->
+              <page>
+                <hotspots>
+                  <spot>
+                    <coordinates>
+                      <x>50</x>
+                      <y>50</y>
+                    </coordinates>
+                    <notes><![CDATA[A short description.]]></notes>
+                  </spot>
+                </hotspots>
+                <page_id>style-b-1</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fit-sample.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </images>
+                  <views>
+                    <image_type>front</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>side</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style B 1</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style B 1 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+              <page>
+                <hotspots>
+                  <spot>
+                    <coordinates>
+                      <x>50</x>
+                      <y>50</y>
+                    </coordinates>
+                    <notes><![CDATA[A short description.]]></notes>
+                  </spot>
+                </hotspots>
+                <page_id>style-b-2</page_id>
+                  <images>
+                    <image_type>list-view</image_type>
+                    <url>fit-sample.png</url>
+                  </images>
+                  <images>
+                    <image_type>hover-view</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </images>
+                  <views>
+                    <image_type>front</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>side</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                  <views>
+                    <image_type>back</image_type>
+                    <url>fit-sample-hover.png</url>
+                  </views>
+                <inseam><![CDATA[20-25"]]></inseam>
+                <front_rise><![CDATA[10.25"]]></front_rise>
+                <knee><![CDATA[12"]]></knee>
+                <leg_open><![CDATA[17.25"]]></leg_open>
+                <name>Style B 2</name>
+                <pocket><![CDATA[Pocket Flap]]></pocket>
+                <rise><![CDATA[Mid Rise]]></rise>
+                <shop_url><![CDATA[20-25"]]></shop_url>
+                <short_description><![CDATA[A short description.]]></short_description>
+                <title>Style B 2 Title</title>
+                <type>style</type>  
+                <video_url><![CDATA[20-25"]]></video_url>
+              </page>
+
+          </page><!-- Fit Page End -->
+
+      </page>
+      <!-- Mens End -->
+
+</site>

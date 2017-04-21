@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site title="Denim Fit Guide for {{ title }} - Find Your Perfect Fitting Jeans | True Religion">
+    <page id="home" name="Home" title="Home" type="defualt">
+      <page_copy><![CDATA[
+      <a href="#mens/"><span>Mens</span><img src="/images/mens.jpg" width="300" /></a>
+      <a href="#womens/"><span>Womens</span><img src="/images/womens.jpg" width="300"  /></a>
+      ]]></page_copy>
+    </page>
+
+    <page id="mens"  name="Mens" title="About Backbone.js" type="gender" >
+  		<page id="fit-a" name="Fit A" title="Fit A Title" type="fit">
+  			<image>sample-fit.jpg</image>
+  			<short_description><![CDATA[A short description.]]></short_description>
+        
+        <page id="style-a-1" name="Style A 1" title="Style A 1 Title" type="style">
+          <images>
+            <image>sample-fit.jpg</image>
+            <image>sample-fit.jpg</image>
+            <image>sample-fit.jpg</image>
+          </images>
+          <inseam><![CDATA[20-25"]]></inseam>
+          <front_rise><![CDATA[10.25"]]></front_rise>
+          <knee><![CDATA[12"]]></knee>
+          <leg_open><![CDATA[17.25"]]></leg_open>
+          <pocket><![CDATA[Pocket Flap]]></pocket>
+          <rise><![CDATA[Mid Rise]]></rise>
+          <shop_url><![CDATA[20-25"]]></shop_url>
+          <short_description><![CDATA[A short description.]]></short_description>  
+          <video_url><![CDATA[20-25"]]></video_url>
+        </page>
+        <page id="style-a-2" name="Style A 2" title="Style A 2 Title" type="style">
+          <image>sample-fit.jpg</image>
+          <short_description><![CDATA[A short description.]]></short_description>  
+        </page>
+        <page id="style-a-3" name="Style A 3" title="Style A 3 Title" type="style">
+          <image>sample-fit.jpg</image>
+          <short_description><![CDATA[A short description.]]></short_description>  
+        </page>
+
+  		</page>
+
+  		<page id="fit-b" name="Fit B" title="Fit B Title" type="fit">
+  			<image>sample-fit.jpg</image>
+  			<short_description><![CDATA[A short description.]]></short_description>
+  		</page>
+
+  		<page id="fit-c" name="Fit C" title="Fit C Title" type="fit">
+  			<image>sample-fit.jpg</image>
+  			<short_description><![CDATA[A short description.]]></short_description>
+  		</page>
+
+    </page>
+
+    <page id="womens"  name="Womens" title="About Backbone.js" type="gender">
+  		<page id="fit-wa" name="Fit A" title="Fit A Title" type="fit">
+  			<image>sample-fit.jpg</image>
+  			<short_description><![CDATA[A short description.]]></short_description>
+  		</page>
+  		<page id="fit-wb" name="Fit B" title="Fit B Title" type="fit">
+  			<image>sample-fit.jpg</image>
+  			<short_description><![CDATA[A short description.]]></short_description>
+  		</page>
+  		<page id="fit-wc" name="Fit C" title="Fit C Title" type="fit">
+  			<image>sample-fit.jpg</image>
+  			<short_description><![CDATA[A short description.]]></short_description>
+  		</page>
+    </page>
+</site>
